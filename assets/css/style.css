@@ -3,7 +3,7 @@
   --outer-space: #212646;
   --bright-turquoise: #ffe556;
   --gin: #ffffff;
-  --heliotrope: #bcb3d3;
+  --heliotrope: #138dd9;
 }
 
 * {
@@ -65,7 +65,7 @@ p {
 header {
   padding: 2.5rem;
   text-align: center;
-  background: #13293d;
+  background: var(--outer-space);
   color: #fff;
   margin: 0 auto;
 }
@@ -75,36 +75,73 @@ header h1.page-title {
   font-size: 4.5rem;
 }
 
-header nav.header-nav {
-  padding: 1rem 1rem;
+nav.header-nav {
+  padding: 1rem 1rem 3em 5em;
   font-size: 2rem;
   text-align: right;
+  text-decoration: none;
+  display: block;
+  background-color: var(--outer-space);
+  text-decoration: block;
 }
 
 nav.header-nav a {
   float: right;
   color: rgb(255, 255, 255);
   padding: 12px;
-  text-decoration: none;
   font-size: 1em;
   line-height: 1em;
   border-radius: 4px;
+  text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   display: block;
 }
 
-
-nav {
-  display: flex;
-  background-color: #d8a47f;
-  
+nav.header-nav li a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+  background-image: linear-gradient(
+    var(--outer-space) 0%,
+    #ffffff 100%
+  );
 }
 
-nav a {
-  color: #13293d;
-  padding: 14px 20px;
+nav.sub-header-nav {
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  text-align: right;
+  display: flex;
+  position: fixed;
+  background-color: var(--heliotrope);
   text-decoration: none;
-  text-align: center;
+}
+
+nav.sub-header-nav a {
+  text-align: right;
+  float: right;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  font-size: 1em;
+  line-height: 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+nav.sub-header-nav li a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+  background-image: linear-gradient(
+    var(--outer-space) 0%,
+    #ffffff 100%
+  );
 }
 
 main {
@@ -114,7 +151,7 @@ main {
 
 aside {
   flex: 1;
-  background-color: #b9c6ae;
+  background-color: var(--heliotrope);
   padding: 20px;
 }
 
@@ -122,6 +159,13 @@ section {
   flex: 3;
   background-color: #fff;
   padding: 20px;
+}
+
+.header img {
+  float: left;
+  width: 10em;
+  height: 7em;
+  background: #555;
 }
 
 .sample-img {
