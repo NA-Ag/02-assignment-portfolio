@@ -2,8 +2,8 @@
 :root {
   --outer-space: #212646;
   --bright-turquoise: #ffe556;
-  --gin: #e0eae4;
-  --heliotrope: #c8c1da;
+  --gin: #ffffff;
+  --heliotrope: #bcb3d3;
 }
 
 /* set content highlight color and background */
@@ -118,6 +118,19 @@ header nav.header-nav li a:hover {
     var(--outer-space) 0%,
     #ffffff 100%
   );
+}
+
+.header img {
+  float: left;
+  width: 10em;
+  height: 7em;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
 }
 
 .breaker{
