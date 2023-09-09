@@ -8,4 +8,4 @@ Repository holds files for a single page stylized website with links to my work 
 
 screenshot [My personal webpage screenshot.](./assets/images/screenshot_working.jpg)
 
-link to deployed application (https://na-ag.github.io/02-assignment-portfolio/)
+link to deployed application (https://na-ag.github.io/02-portfolio/)
